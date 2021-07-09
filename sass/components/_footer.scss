@@ -1,0 +1,134 @@
+.conteiner-footer {
+    display: flex;
+    align-items: baseline;
+}
+.footer {
+    
+    background-color: $strong-color ;
+    text-decoration: none;
+    line-height: 1.714;
+    font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+&-list {
+    margin-right: 70px;
+    text-decoration: none;
+}
+ &-list__logo {
+    display: inline-block;
+    color: $while-color;
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 1.192;
+    margin-bottom: 20px;
+}
+&-list__logotip {
+    color: $pretty-color;
+}
+&-list__text {
+    color: $while-color;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.142;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+&-list__icon {
+    display: flex;
+    width: 206px;
+    padding: 0 auto;
+    margin: auto;
+    justify-content: space-between;
+       text-align: center;
+       align-items: center;
+       margin-top: 20px;
+}
+&-list__link {
+       display: flex;
+       width: 44px;
+       height: 44px;
+       fill: $while-color;
+       border-radius: 50%;
+       background-color: rgba(255, 255, 255, 0.1);
+       align-items: center;
+       justify-content: center;
+       transition-property: background-color;
+       transition: transform 250ms;
+       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
+  &-list__link:hover, &-list__link:focus {
+       background-color: $pretty-color;
+       }
+}
+
+.navigation-list__map {
+    display: inline-block;
+    color: $while-color;
+    font-family: Roboto;
+    width: 231px;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: normal;
+    margin-bottom: 0;
+}
+.navigation-list__add {
+    display: inline-block;
+    color: $add-color;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    margin-bottom: 0;
+}
+.navigation-list li:nth-last-child(n+2){
+    margin-bottom: 9px;
+}
+
+       .subscription {
+        display: flex;
+        width: 570px;
+        height: 86px;
+      
+      &__input { 
+        width: 358px;
+        height: 50px;
+       background-color: $strong-color;
+        margin-top: 20px;
+        margin-right: 12px;
+        color: rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        border-radius: 4px;
+        outline: none;
+      }
+      &__button {
+        position: relative;
+        margin-top: 20px;
+        width: 200px;
+        height: 50px;
+        background-color: $pretty-color;
+        color: $while-color;
+        border-radius: 4px;
+        border: 1px solid $pretty-color;
+        padding-right: 62px;
+        padding-left: 29px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        cursor: pointer;
+      }
+      &__button::after {
+        position: absolute;
+        content: '';
+        background-image: url(../images/icons.svg/iconsend.svg);
+        width: 24px;
+        height: 24px;
+        
+        top: 13px;
+        right: 28px;
+        color: $while-color;
+      }
+    }

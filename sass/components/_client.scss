@@ -1,0 +1,39 @@
+.client {
+    display: flex;
+    
+
+    &__team {
+        position: relative;
+        display: flex;
+        width: 170px;
+        height: 92px;
+        padding: 0;
+        outline: 1px solid $client-color;
+        fill: $client-color;
+        justify-content:center;
+        text-align: center;
+        align-items: center;
+        border-radius: 2px;
+        transition-property: fill;
+        transition: transform 1000ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
+&__icon {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    width: 106px;
+    height: 60px;}
+
+&__item:nth-last-child(1n) {
+    margin-right: 30px;}
+    
+&__item:nth-child(6n) {
+        margin-right: 0;
+    }
+    
+&__team:focus, &__team:hover {
+    fill: $pretty-color;
+    outline: 1px solid $pretty-color;  
+}
+}
