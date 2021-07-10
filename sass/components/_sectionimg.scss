@@ -1,12 +1,22 @@
 .section__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: $black-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+  
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.179;
     text-align: center;
-}
+    color: $black-color;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.167;
+    }
+  }
+  .our-work {
+    @media screen and (max-width: 1199px)
+     {
+        display: none;
+    }
+  }
 .product {
 &__list {
     position: relative;

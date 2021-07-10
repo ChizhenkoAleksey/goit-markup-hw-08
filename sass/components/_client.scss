@@ -1,5 +1,10 @@
 .client {
-    display: flex;
+    
+    
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+      
     
 
     &__team {
@@ -25,12 +30,23 @@
     width: 106px;
     height: 60px;}
 
-&__item:nth-last-child(1n) {
-    margin-right: 30px;}
-    
-&__item:nth-child(6n) {
-        margin-right: 0;
+&__item{
+    @media screen and (max-width: 767px) {
+      flex-basis: calc((100% - 60px) / 2);
+      margin: 15px;
     }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 90px) / 3);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 180px) / 6);
+      margin: 15px;
+    }
+    
+  }
+    
+
     
 &__team:focus, &__team:hover {
     fill: $pretty-color;

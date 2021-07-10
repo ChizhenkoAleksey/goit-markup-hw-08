@@ -1,22 +1,77 @@
 .post {
+    
+       display: block;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        background-color: $while-color;
+        background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+          url('../images/heroi-mob-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+            url('../images/heroi-mob-2.jpg');
+        }
+        @media screen and (min-width: 481px) {
+          background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+            url('../images/heroi-tab-1.jpg');
+          @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+              url('../images/heroi-tab-2.jpg');
+          }
+        }
+        @media screen and (min-width: 1200px) {
+          background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+            url('../images/heroi-desk-1.jpg');
+          max-width: 1600px;
+          height: 600px;
+          @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+              url('../images/heroi-desk-2.jpg');
+          }
+        }
+    
+    
+    
+    
+    &__conteiner {
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),url(../images/heroi.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-
-&__title {
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+  }
+  &__title {
     margin-top: 0;
+    margin-right: auto;
     margin-bottom: 30px;
-    color: $while-color;
+    margin-left: auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
+    color: $while-color;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+
 &__button {
     position: relative;
     display: inline-block;
@@ -39,3 +94,5 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
+
+

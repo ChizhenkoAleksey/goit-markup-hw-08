@@ -33,12 +33,28 @@
                     <li class="auth-nav__item"><a class="auth-nav__link" href="mailto:info@devstudio.com"><svg class="auth-nav__icon" width=16px height=12px> <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
                     <li class="auth-nav__item"><a class="auth-nav__link"  href="tel:+380961111111"><svg class="auth-nav__icon" width=10px height=16px> <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
                 </ul>
+                <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                aria-label="Открыть меню"
+              >
+                <svg
+                  class="menu-toggle__icon"
+                  width="40"
+                  height="40px"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use href="./images/icons.svg/symbol-defs.svg#icons-menu"></use>
+                </svg>
+              </button>
         </div>
+        
     </header>
 <main class="main-portfolio">
-<section class="section">
+<section class="portfolio">
     <div class="container">
-    
+    <div class="buttons">
     <ul class="button-text list">
        <li class="button-text__item"><button type="button" class="button-text__primary" >Все</button> </li>
        <li class="button-text__item"><button type="button" class="button-text__primary">Веб-сайты</button> </li>
@@ -46,14 +62,44 @@
        <li class="button-text__item"><button type="button" class="button-text__primary">Дизайн</button> </li>
        <li class="button-text__item"><button type="button" class="button-text__primary">Маркетинг</button> </li>
     </ul>
-    
+</div>
     
     <ul class="comunity list">
         <li class="comunity__item">
             
-            <a  href="">
+            <a  href="" class="comunity__card">
              <div class="comunity__box"> 
-            <img  src="./images/fot1.jpg" alt="fot1" width="370" height="404"/>
+                <picture>
+                    
+                    <source
+                      srcset="
+                        ./images/technokryk-desk-1.jpg    1x,
+                        ./images/technokryk-desk-2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    
+                    <source
+                      srcset="
+                        ./images/technokryk-tab-1.jpg    1x,
+                        ./images/technokryk-tab-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    
+                    <source
+                      srcset="
+                        ./images/technokryk-mob-1.jpg    1x,
+                        ./images/technokryk-mob-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/jpeg"
+                    />
+                    <img  src="./images/fot1.jpg" alt="fot1" width="370" height="404"/>
+                  </picture>
+            
             <div class="comunity__overlay">
         <p class="comunity__text" >Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             
@@ -68,9 +114,39 @@
         </a>
         </li>
         <li class="comunity__item">
-            <a hreh="">
+            <a hreh="" class="comunity__card">
                 <div class="comunity__box"> 
-            <img src="./images/fot2.jpg" alt="fot2" width="370" />
+                    <picture>
+                    
+                        <source
+                          srcset="
+                            ./images/poster-desk-1.jpg    1x,
+                            ./images/poster-desk-2.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/poster-tab-1.jpg    1x,
+                            ./images/poster-tab-2.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/poster-mob-1.jpg    1x,
+                            ./images/poster-mob-2.jpg 2x
+                          "
+                          media="(min-width: 480px)"
+                          type="image/jpeg"
+                        />
+                        <img src="./images/fot2.jpg" alt="fot2" width="370" />
+                      </picture>
+            
             <div class="comunity__overlay">
                 <p class="comunity__text" >Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     
@@ -83,9 +159,39 @@
             </a>
         </li>
         <li class="comunity__item">
-            <a hreh="">
+            <a hreh="" class="comunity__card">
                 <div class="comunity__box"> 
-            <img src="./images/fot3.jpg" alt="fot3" width="370" />
+                    <picture>
+                    
+                        <source
+                          srcset="
+                            ./images/seafood-desk-1.jpg    1x,
+                            ./images/seafood-desk-2.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/seafood-tab-1.jpg    1x,
+                            ./images/seafood-tab-2.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/seafood-mob-1.jpg    1x,
+                            ./images/seafood-mob-2.jpg 2x
+                          "
+                          media="(min-width: 480px)"
+                          type="image/jpeg"
+                        />
+                        <img src="./images/fot3.jpg" alt="fot3" width="370" />
+                      </picture>
+           
             <div class="comunity__overlay">
                 <p class="comunity__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     
@@ -98,9 +204,39 @@
             </a>
         </li>
         <li class="comunity__item">
-            <a hreh="">
+            <a hreh="" class="comunity__card">
                 <div class="comunity__box"> 
-            <img src="./images/fot4.jpg" alt="fot4" width="370" />
+                    <picture>
+                    
+                        <source
+                          srcset="
+                            ./images/prime-desk-1.jpg    1x,
+                            ./images/prime-desk-2.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/prime-tab-1.jpg    1x,
+                            ./images/prime-tab-2.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/prime-mob-1.jpg    1x,
+                            ./images/prime-mob-2.jpg 2x
+                          "
+                          media="(min-width: 480px)"
+                          type="image/jpeg"
+                        />
+                        <img src="./images/fot4.jpg" alt="fot4" width="370" />
+                      </picture>
+            
             <div class="comunity__overlay">
                 <p class="comunity__text" >Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     
@@ -113,9 +249,39 @@
             </a>
         </li>
         <li class="comunity__item">
-            <a hreh="">
+            <a hreh="" class="comunity__card">
                 <div class="comunity__box"> 
-            <img src="./images/fot5.jpg" alt="fot5" width="370" />
+                    <picture>
+                    
+                        <source
+                          srcset="
+                            ./images/boxes-desk-1.jpg    1x,
+                            ./images/boxes-desk-2.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/boxes-tab-1.jpg    1x,
+                            ./images/boxes-tab-2.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/boxes-mob-1.jpg    1x,
+                            ./images/boxes-mob-2.jpg 2x
+                          "
+                          media="(min-width: 480px)"
+                          type="image/jpeg"
+                        />
+                        <img src="./images/fot5.jpg" alt="fot5" width="370" />
+                      </picture>
+        
             <div class="comunity__overlay">
                 <p class="comunity__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     
@@ -128,9 +294,39 @@
             </a>
         </li>
         <li class="comunity__item">
-            <a hreh="">
+            <a hreh="" class="comunity__card">
                 <div class="comunity__box"> 
-            <img src="./images/fot6.jpg" alt="fot6" width="370" />
+                    <picture>
+                    
+                        <source
+                          srcset="
+                            ./images/border-desk-1.jpg    1x,
+                            ./images/border-desk-2.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/border-tab-1.jpg    1x,
+                            ./images/border-tab-2.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/border-mob-1.jpg    1x,
+                            ./images/border-mob-2.jpg 2x
+                          "
+                          media="(min-width: 480px)"
+                          type="image/jpeg"
+                        />
+                        <img src="./images/fot6.jpg" alt="fot6" width="370" /> 
+                      </picture>
+           
             <div class="comunity__overlay">
                 <p class="comunity__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     
@@ -143,9 +339,39 @@
             </a>
         </li>
         <li class="comunity__item">
-            <a hreh="">
+            <a hreh="" class="comunity__card">
                 <div class="comunity__box"> 
-            <img src="./images/fot7.jpg" alt="fot7" width="370" />
+                    <picture>
+                    
+                        <source
+                          srcset="
+                            ./images/limited-desk-1.jpg    1x,
+                            ./images/limited-desk-2.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/limited-tab-1.jpg    1x,
+                            ./images/limited-tab-2.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/limited-mob-1.jpg    1x,
+                            ./images/limited-mob-2.jpg 2x
+                          "
+                          media="(min-width: 480px)"
+                          type="image/jpeg"
+                        />
+                        <img src="./images/fot7.jpg" alt="fot7" width="370" />
+                      </picture>
+            
             <div class="comunity__overlay">
                 <p class="comunity__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     
@@ -158,9 +384,39 @@
             </a>
         </li>
         <li class="comunity__item">
-            <a hreh="">
+            <a hreh="" class="comunity__card">
                 <div class="comunity__box"> 
-            <img src="./images/fot8.jpg" alt="fot8" width="370" />
+                    <picture>
+                    
+                        <source
+                          srcset="
+                            ./images/lab-desk-1.jpg    1x,
+                            ./images/lab-desk-2.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/lab-tab-1.jpg    1x,
+                            ./images/lab-tab-2.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/lab-mob-1.jpg    1x,
+                            ./images/lab-mob-2.jpg 2x
+                          "
+                          media="(min-width: 480px)"
+                          type="image/jpeg"
+                        />
+                        <img src="./images/fot8.jpg" alt="fot8" width="370" /> 
+                      </picture>
+           
             <div class="comunity__overlay">
                 <p class="comunity__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     
@@ -173,9 +429,39 @@
             </a>
         </li>
         <li class="comunity__item">
-            <a hreh="">
+            <a hreh="" class="comunity__card">
                 <div class="comunity__box"> 
-            <img src="./images/fot9.jpg" alt="fot9" width="370" />
+                    <picture>
+                    
+                        <source
+                          srcset="
+                            ./images/growing-desk-1.jpg    1x,
+                            ./images/growing-desk-2.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/growing-tab-1.jpg    1x,
+                            ./images/growing-tab-2.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                          type="image/jpeg"
+                        />
+                        
+                        <source
+                          srcset="
+                            ./images/growing-mob-1.jpg    1x,
+                            ./images/growing-mob-2.jpg 2x
+                          "
+                          media="(min-width: 480px)"
+                          type="image/jpeg"
+                        />
+                        <img src="./images/fot9.jpg" alt="fot9" width="370" />
+                      </picture>
+           
             <div class="comunity__overlay">
                 <p class="comunity__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     

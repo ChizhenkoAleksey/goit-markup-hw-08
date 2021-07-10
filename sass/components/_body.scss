@@ -29,6 +29,9 @@ ul {
     font-family: Roboto, sans-serif;
     font-style: normal;
     letter-spacing: 0.03em;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    overflow-x: hidden;
    
 }
 
@@ -36,7 +39,7 @@ h1 {
       text-transform: uppercase;
   }
   h1, h2, h3 {
-      margin: 0 auto;
+      margin: 0 ;
   }
   p {
       margin: 0;
@@ -44,9 +47,31 @@ h1 {
   img {
     display: block;
 }
-  .container {
-    width: 1200px;
-    padding: 0 15px;
+.container {
+ 
+    display: block;
     margin-left: auto;
     margin-right: auto;
-}
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 15px;
+
+    @media screen and (min-width: 480px) {
+      max-width: 480px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+
+  
+  body.modal-open {
+    overflow: hidden;
+  }
+  
+  

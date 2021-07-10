@@ -1,20 +1,39 @@
 .work-nav {
+    display: block;
     background: $work-color;
 }
 .team {
-
+    
 &__list {
-    display: flex;
+    display: block;
     justify-content:space-between;
     margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+      }
 }
 &__item {
+    
     background-color: $while-color;
   
   border-radius: 1px;
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-   
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 60px) / 2);
+        margin: 15px;
+      }
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 120px) / 4);
+        margin: 15px;
+      }
 }
 
 &__listy {
@@ -77,5 +96,10 @@
     background-color: $pretty-color;
     border-radius: 50%;
     fill: $table-color;
+}
+&__images {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 }

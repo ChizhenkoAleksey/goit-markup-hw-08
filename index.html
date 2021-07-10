@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container header__container">
             <a class="logo" href=""><span class="part-logo">Web</span>Studio</a>
-            <nav>
+            <nav class="nav">
                 <ul class="site-nav list">
                     <li class="site-nav__item">
                         <a class="site-nav__link site-nav__link--active" href="./index.html">Студия</a>
@@ -35,10 +35,88 @@
                     <li class="auth-nav__item"><a class="auth-nav__link" href="mailto:info@devstudio.com"><svg class="auth-nav__icon" width=16px height=12px> <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
                     <li class="auth-nav__item"><a class="auth-nav__link"  href="tel:+380961111111"><svg class="auth-nav__icon" width=10px height=16px> <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
                 </ul>
+
+
+                <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                aria-label="Открыть меню"
+              >
+                <svg
+                  class="menu-toggle__icon"
+                  width="40"
+                  height="40px"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use href="./images/icons.svg/symbol-defs.svg#icons-menu"></use>
+                </svg>
+              </button>
+
+
+              <div class="menu-container js-menu-container" id="mobile-menu">
+
+                <button class="menu-toggle js-close-menu" aria-label="Закрыть">
+                  <svg class="js-close-menu__icon" width="40px" height="40px">
+                    <use href="./images/icons.svg/symbol-defs.svg#icons-close"></use>
+                  </svg>
+                </button>
+          
+          
+          
+                <div class="mobile-nav">
+                  <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="./index.html" class="mobile-nav__link">Студия</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+                    </li>
+                    <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Контакты</a></li>
+                  </ul>
+                </div>
+          
+          
+          
+                <div class="mobile-contacts">
+                  <ul class="mobile-contacts__list">
+                    <li class="mobile-contacts__item">
+                      <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                      <a href="mailto:info@devstudio.com"class="mobile-contacts__link mobile-contacts__link--mail">info@devstudio.com</a>
+                    </li>
+                  </ul>
+                </div>
+          
+          
+          
+          
+                <div class="mobile-social">
+                  <ul class="mobile-social__list">
+                    <li class="mobile-social__item">
+                      <a href="" class="mobile-social__link">Instagram</a>
+                    </li>
+                    <li class="mobile-social__item">
+                      <a href="" class="mobile-social__link">Twitter</a>
+                    </li>
+                    <li class="mobile-social__item">
+                      <a href="" class="mobile-social__link">Facebook</a>
+                    </li>
+                    <li class="mobile-social__item">
+                      <a href="" class="mobile-social__link">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
         </div>
     </header>
     <main>
 <section class="post">
+    <div class="conteiner post__conteiner">
     <h1 class="post__title"> Эффективные решения <br> 
         для вашего бизнеса</h1>
 
@@ -101,7 +179,7 @@
         </div>
            
     </div>
-
+</div>
 </section>
 <section class="feature">
     <div class="container">
@@ -130,7 +208,7 @@
     </ul>
     </div>
     </section>
-    <section class="section">
+    <section class="section our-work">
         <div class="container">
     <h2 class="section__title">Чем мы занимаемся</h2>
     <ul class="product__list list">
@@ -167,7 +245,34 @@
     <h2 class="section__title">Наша команда</h2>
     <ul class="team__list list">
         <li class="team__item">
-            <img src="./images/employer1.jpg" alt="employe1" width="270" />
+            <picture>
+               
+                <source
+                  srcset="
+                     ./images/igor-desk-1.jpg 1x,
+                     ./images/igor-desk-2.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                
+                <source
+                  srcset="
+                    ./images/igor-tab-1.jpg   1x,
+                    ./images/igor-tab-2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                      ./images/igor-mob-1.jpg 1x, 
+                      ./images/igor-mob-2.jpg 2x"
+                  media="(min-width: 480px)"
+                  type="image/jpeg"
+                />
+                <img class="team__images" src="./images/employer1.jpg" alt="employe1" width="270" /> 
+              </picture>
+           
             <div class="team__listy">
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p class="team__work">Product Designer</p>
@@ -181,7 +286,33 @@
         </li>
 
         <li class="team__item">
-            <img src="./images/employer2.jpg" alt="employe2" width="270" />
+            <picture>
+               
+                <source
+                  srcset="
+                     ./images/olga-desk-1.jpg 1x,
+                     ./images/olga-desk-2.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                
+                <source
+                  srcset="
+                    ./images/olga-tab-1.jpg   1x,
+                    ./images/olga-tab-2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                      ./images/olga-mob-1.jpg 1x, 
+                      ./images/olga-mob-2.jpg 2x"
+                  media="(min-width: 480px)"
+                  type="image/jpeg"
+                />
+                <img class="team__images" src="./images/employer2.jpg" alt="employe2" width="270" /> 
+              </picture>
             <div class="team__listy">
             <h3 class="team__name">Ольга Репина</h3>
             <p class="team__work">Frontend Developer</p>
@@ -194,7 +325,33 @@
         </div>
         </li>
         <li class="team__item">
-            <img src="./images/employer3.jpg" alt="employe3" width="270" />
+            <picture>
+               
+                <source
+                  srcset="
+                     ./images/koly-desk-1.jpg 1x,
+                     ./images/koly-desk-2.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                
+                <source
+                  srcset="
+                    ./images/koly-tab-1.jpg   1x,
+                    ./images/koly-tab-2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                      ./images/koly-mob-1.jpg 1x, 
+                      ./images/koly-mob-2.jpg 2x"
+                  media="(min-width: 480px)"
+                  type="image/jpeg"
+                />
+                <img class="team__images" src="./images/employer3.jpg" alt="employe3" width="270" /> 
+              </picture>
             <div class="team__listy">
             <h3 class="team__name">Николай Тарасов</h3>
             <p class="team__work">Marketing</p>
@@ -207,7 +364,33 @@
             </div>
         </li>
         <li class="team__item">
-            <img src="./images/employer4.jpg" alt="employe4" width="270" />
+            <picture>
+               
+                <source
+                  srcset="
+                     ./images/misha-desk-1.jpg 1x,
+                     ./images/misha-desk-2.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                
+                <source
+                  srcset="
+                    ./images/misha-tab-1.jpg   1x,
+                    ./images/misha-tab-2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                      ./images/misha-mob-1.jpg 1x, 
+                      ./images/misha-mob-2.jpg 2x"
+                  media="(min-width: 480px)"
+                  type="image/jpeg"
+                />
+                <img class="team__images" src="./images/employer4.jpg" alt="employe4" width="270" /> 
+              </picture>
             <div class="team__listy">
             <h3 class="team__name">Михаил Ермаков</h3>
             <p class="team__work">UI Designer</p> 
@@ -296,9 +479,9 @@
         
          </div>
          <div class="footer-email">
-            <h3 class="footer-list__text">Подпишитесь на рассылку</h3>
+            
             <form class="subscription">
-                <label for="email"></label>
+                <label class="subscription__label" for="email">Подпишитесь на рассылку</label>
                 <input class="subscription__input" type="email" name="email" id="email" placeholder="E-mail">
                 <button class="subscription__button" type="submit">Подписаться</button>
             </form>
@@ -306,6 +489,7 @@
          </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
