@@ -49,12 +49,67 @@
                 </svg>
               </button>
         </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+
+          <button class="menu-toggle js-close-menu" aria-label="Закрыть">
+            <svg class="js-close-menu__icon" width="40px" height="40px">
+              <use href="./images/icons.svg/symbol-defs.svg#icons-close"></use>
+            </svg>
+          </button>
+    
+    
+    
+          <div class="mobile-nav">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="./index.html" class="mobile-nav__link">Студия</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+              </li>
+              <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Контакты</a></li>
+            </ul>
+          </div>
+    
+    
+    
+          <div class="mobile-contacts">
+            <ul class="mobile-contacts__list">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--tel">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com"class="mobile-contacts__link mobile-contacts__link--mail">info@devstudio.com</a>
+              </li>
+            </ul>
+          </div>
+    
+    
+    
+    
+          <div class="mobile-social">
+            <ul class="mobile-social__list">
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         
     </header>
 <main class="main-portfolio">
 <section class="portfolio">
     <div class="container">
-    <div class="buttons">
+    
     <ul class="button-text list">
        <li class="button-text__item"><button type="button" class="button-text__primary" >Все</button> </li>
        <li class="button-text__item"><button type="button" class="button-text__primary">Веб-сайты</button> </li>
@@ -62,7 +117,7 @@
        <li class="button-text__item"><button type="button" class="button-text__primary">Дизайн</button> </li>
        <li class="button-text__item"><button type="button" class="button-text__primary">Маркетинг</button> </li>
     </ul>
-</div>
+
     
     <ul class="comunity list">
         <li class="comunity__item">
@@ -97,7 +152,7 @@
                       media="(min-width: 480px)"
                       type="image/jpeg"
                     />
-                    <img  src="./images/fot1.jpg" alt="fot1" width="370" height="404"/>
+                    <img  src="./images/fot1.jpg" alt="fot1" />
                   </picture>
             
             <div class="comunity__overlay">
@@ -144,7 +199,7 @@
                           media="(min-width: 480px)"
                           type="image/jpeg"
                         />
-                        <img src="./images/fot2.jpg" alt="fot2" width="370" />
+                        <img src="./images/fot2.jpg" alt="fot2" />
                       </picture>
             
             <div class="comunity__overlay">
@@ -189,7 +244,7 @@
                           media="(min-width: 480px)"
                           type="image/jpeg"
                         />
-                        <img src="./images/fot3.jpg" alt="fot3" width="370" />
+                        <img src="./images/fot3.jpg" alt="fot3"  />
                       </picture>
            
             <div class="comunity__overlay">
@@ -234,7 +289,7 @@
                           media="(min-width: 480px)"
                           type="image/jpeg"
                         />
-                        <img src="./images/fot4.jpg" alt="fot4" width="370" />
+                        <img src="./images/fot4.jpg" alt="fot4" />
                       </picture>
             
             <div class="comunity__overlay">
@@ -279,7 +334,7 @@
                           media="(min-width: 480px)"
                           type="image/jpeg"
                         />
-                        <img src="./images/fot5.jpg" alt="fot5" width="370" />
+                        <img src="./images/fot5.jpg" alt="fot5"  />
                       </picture>
         
             <div class="comunity__overlay">
@@ -324,7 +379,7 @@
                           media="(min-width: 480px)"
                           type="image/jpeg"
                         />
-                        <img src="./images/fot6.jpg" alt="fot6" width="370" /> 
+                        <img src="./images/fot6.jpg" alt="fot6"  /> 
                       </picture>
            
             <div class="comunity__overlay">
@@ -369,7 +424,7 @@
                           media="(min-width: 480px)"
                           type="image/jpeg"
                         />
-                        <img src="./images/fot7.jpg" alt="fot7" width="370" />
+                        <img src="./images/fot7.jpg" alt="fot7"  />
                       </picture>
             
             <div class="comunity__overlay">
@@ -414,7 +469,7 @@
                           media="(min-width: 480px)"
                           type="image/jpeg"
                         />
-                        <img src="./images/fot8.jpg" alt="fot8" width="370" /> 
+                        <img src="./images/fot8.jpg" alt="fot8"  /> 
                       </picture>
            
             <div class="comunity__overlay">
@@ -459,7 +514,7 @@
                           media="(min-width: 480px)"
                           type="image/jpeg"
                         />
-                        <img src="./images/fot9.jpg" alt="fot9" width="370" />
+                        <img src="./images/fot9.jpg" alt="fot9"  />
                       </picture>
            
             <div class="comunity__overlay">
@@ -516,6 +571,7 @@
      </div>
     </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

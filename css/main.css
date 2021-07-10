@@ -895,7 +895,6 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
   height: 92px;
   padding: 0;
   outline: 1px solid #AFB1B8;
@@ -1006,6 +1005,7 @@ body.modal-open {
 @media screen and (max-width: 1199px) {
   .footer-list {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
 
@@ -1308,6 +1308,9 @@ body.modal-open {
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
         flex-basis: calc((100% - 90px) / 3);
     margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1319,7 +1322,6 @@ body.modal-open {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
 }
 
 .comunity__card:hover, .comunity__card:focus {
