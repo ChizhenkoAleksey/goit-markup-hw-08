@@ -75,6 +75,7 @@
   .comunity__card:hover .cumunity__overlay {
     transform: translateY(0);
     overflow: auto;
+    
   }
   .comunity__card:focus .cumunity__overlay {
     transform: translateY(0);
@@ -104,3 +105,4 @@
     color: $active-color;
     }
   }
+ 

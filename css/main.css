@@ -582,6 +582,7 @@ body.modal-open {
 
 .feature__list {
   display: block;
+  margin-bottom: 30px;
   line-height: 1.71;
 }
 
@@ -593,6 +594,7 @@ body.modal-open {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
+    margin-bottom: 30px;
   }
 }
 
